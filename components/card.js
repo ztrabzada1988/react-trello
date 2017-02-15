@@ -7,7 +7,7 @@ var Card = function(props) {
     )
 }
 
-// adding to compon
+// adding to components
 
 //var Card = React.createClass({
 //    render: function() {
