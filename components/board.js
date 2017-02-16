@@ -1,34 +1,15 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
 
-var List = require('./list');
+import List from './list';
 
+export default function Board(props) {
 
-var Board = function(props) {
     return (
-        <div className="board">
-            <List title="List one"
-                  Card="hello i am the first one" />
-            <List title="List two">
-                  Card="i am numbe tow" />
-            <List title="List three"
-                  Card="i am three" />
+        <div className="Board">
+            <List title="first list" />
+            <List title="2nd list" />
+            <List title="2nd list" />
+
         </div>
     );
-};
-
-//var Board = React.createClass({
-//    render: function() {
-//        var listBoard = [];
-//        for (var i =0; i < 3; i++) {
-//            listBoard.push(<List />);
-//        }
-//        return (
-//            <div className="board-list">
-//                {listBoard}
-//            </div>
-//        );
-//    }
-//});
-
-module.exports = Board;
+}

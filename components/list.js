@@ -1,33 +1,15 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
 
-var Card = require('./card');
+import Card from './card';
 
-var List = function(props) {
+export default function List(props) {
+
     return (
         <div className="list">
-            <div className="list-title">{props.title}</div>
-            <div className="card-content">{props.Card}</div>
+            <div className="title">{props.title}</div>
+            <Card text="I am card 1" />
+            <Card text="I am card 2" />
+            <Card text="I am card 3" />
         </div>
-        <form className="text-input">
-            <input text="">
-        </form>
     );
-};
-
-
-//var List = React.createClass({
-//    render: function() {
-//        var cardList = [];
-//        for (var i = 0; i < 3; i++) {
-//            cardList.push(<Card />);
-//        }
-//        return (
-//            <div className="card-list">
-//                {cardList}
-//            </div>
-//        );
-//    }
-//});
-
-module.exports = List;
+}

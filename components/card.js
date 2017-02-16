@@ -1,22 +1,9 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
 
-var Card = function(props) {
+export default function Card(props) {
     return (
-        <div className="text">{props.text}</div>
-    )
+        <div className="card">
+            <h1>{props.text}</h1>
+        </div>
+    );
 }
-
-// adding to components
-
-//var Card = React.createClass({
-//    render: function() {
-//        return (
-//            <div className="card-text">
-//                This is a Card
-//            </div>
-//        );
-//    }
-// })
-
-module.exports = Card;

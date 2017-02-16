@@ -1,14 +1,12 @@
 require('babel-polyfill');
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var Card = require('./components/card');
-var List = require('./components/list');
-var Board = require('./components/board');
+import Board from './components/board';
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    ReactDOM.render(<Board /> , document.getElementById('app'));
+    ReactDOM.render(<Board title="Board 1" /> , document.getElementById('app'));
 });
 
