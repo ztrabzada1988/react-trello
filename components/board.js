@@ -3,7 +3,7 @@ import React from 'react';
 import List from './list';
 
 export default function Board(props) {
-    // return the following lists to board (which is the main parent since)
+    // return the following lists to board (which is the main parent since list is cards parent)
     return (
         <div className="Board">
             <List title="first list" />
