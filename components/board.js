@@ -3,7 +3,7 @@ import React from 'react';
 import List from './list';
 
 export default function Board(props) {
-    // return the following lists
+    // return the following lists to board
     return (
         <div className="Board">
             <List title="first list" />
