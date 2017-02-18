@@ -22,7 +22,7 @@ export default class listContainer extends React.Component {
 
     onAddInputChanged(event) {
         event.preventDefault();
-        console.log("i m changing");
+        console.log("Am i m changing");
 
     }
 
