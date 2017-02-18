@@ -3,15 +3,15 @@ import React from 'react';
 import List from './list';
 import Card from './card';
 
-export default class listContainer React.Component {
+export default class listContainer extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             text: "",
             cards: [
-                <Card text="this card 1" />
-                <Card text="this card 2" />
+                <Card text="this card 1" />,
+                <Card text="this card 2" />,
                 <Card text="this card 3" />
             ]
         }
@@ -20,9 +20,9 @@ export default class listContainer React.Component {
         this.onAddSubmit = this.onAddSubmit.bind(this);
     }
 
-
     onAddInputChanged(event) {
         event.preventDefault();
+        console.log("i m changing");
 
     }
 
@@ -33,11 +33,8 @@ export default class listContainer React.Component {
 
     render() {
 
-
         return (
             <List cards={this.state.cards} onChange={this.onAddInputChanged} onSubmit={this.onAddSubmit} />
         );
     }
-
-
 }
