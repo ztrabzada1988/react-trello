@@ -12,7 +12,7 @@ export default class listContainer extends React.Component {
             cards: [
                 <Card text="this is card 1" />,
                 <Card text="this is card 2" />,
-                <Card text="this card 3" />
+                <Card text="this is card 3" />
             ]
         }
 
