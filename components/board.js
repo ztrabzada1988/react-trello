@@ -1,13 +1,13 @@
 import React from 'react';
+import ListContainer from './ListContainer';
 
-import listContainer from './list-container';
+export default function Board(props)  {
 
-export default function Board(props) {
-    // return the following list to board (which is the main parent)
-    return (
-        <div className="Board">
+    return(
+        <div className="board" title={props.title}>
             <header>{props.title}</header>
-            <listContainer />
+        <ListContainer />
+        <ListContainer />
         </div>
     );
 }

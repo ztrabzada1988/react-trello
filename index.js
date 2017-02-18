@@ -1,12 +1,9 @@
-require('babel-polyfill');
-
+import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Board from './components/board';
+import Board from './components/Board';
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    ReactDOM.render(<Board title="Board 1" /> , document.getElementById('app'));
+document.addEventListener('DOMContentLoaded', () => {
+    ReactDOM.render(<Board title="MyBoard" />, document.getElementById('app'));
 });
-
