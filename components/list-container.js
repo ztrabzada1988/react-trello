@@ -28,7 +28,7 @@ export default class listContainer extends React.Component {
 
     onAddSubmit(event) {
         event.preventDefault();
-        console.log("hello am i logged on addsubmit");
+        console.log("hello am i logged on addsubmit submisssio");
     }
 
     render() {
